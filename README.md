@@ -5,10 +5,10 @@
 --
 目录地址:lonban/lswagger/config/lswagger.php
 
-#http://localhost/lswagger/api
+#生成api文档并展示
 --
-生成api文档并展示
+http://localhost/lswagger/api
 
-#http://localhost/lswagger/docs
+#仅展示api文档
 --
-仅展示api文档
+http://localhost/lswagger/docs
