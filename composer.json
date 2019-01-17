@@ -3,6 +3,7 @@
     "description": "通过swagger注释,生成api文档",
     "keywords": ["l-swagger","swagger","lonban"],
     "license": "MIT",
+    "type": "laravel-library",
     "authors": [
         {
             "name": "Lon Ban",
@@ -10,13 +11,15 @@
         }
     ],
     "require": {
-        "php": ">=7.0.0",
+        "php": "^7.0.0",
         "zircote/swagger-php": "~2.0|3.*",
-        "swagger-api/swagger-ui": "^3.0"
+        "swagger-api/swagger-ui": "^3.0",
+        "laravel/framework": "~5.5.0",
+        "lonban/vcjs": "~1.0.0"
     },
     "autoload": {
         "psr-4": {
-            "Lswagger\\": "src/"
+            "Lonban\\Lswagger\\": "src/"
         },
         "files": [
             "src/method.php"
@@ -25,10 +28,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Lswagger\\LswaggerServiceProvider"
+                "Lonban\\Lswagger\\LswaggerServiceProvider"
             ],
             "aliases": {
-                "Lswagger": "Lswagger\\Facades\\LswaggerFacade"
+                "Lswagger": "Lonban\\Lswagger\\Facades\\LswaggerFacade"
             }
         }
     },

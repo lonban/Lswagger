@@ -1,6 +1,6 @@
 <?php
 
-namespace Lswagger\Controllers;
+namespace Lonban\Lswagger\Controllers;
 
 use Illuminate\Routing\Controller;
 

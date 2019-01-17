@@ -1,8 +1,8 @@
 <?php
 
-namespace Lswagger\Controllers;
+namespace Lonban\Lswagger\Controllers;
 
-use Lswagger\Classes\LswaggerClasses;
+use Lonban\Lswagger\Classes\LswaggerClasses;
 
 class LswaggerContrller extends CommonController
 {

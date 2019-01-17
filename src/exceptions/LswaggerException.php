@@ -1,6 +1,6 @@
 <?php
 
-namespace Lswagger\Exceptions;
+namespace Lonban\Lswagger\Exceptions;
 
 use Exception;
 

@@ -1,7 +1,7 @@
 <?php
 
-use Lswagger\Classes\PathClasses;
-use Lswagger\Classes\FileClasses;
+use Lonban\Lswagger\Classes\PathClasses;
+use Lonban\Lswagger\Classes\FileClasses;
 
 ?>
 <!-- HTML for static distribution bundle build -->

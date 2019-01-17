@@ -1,3 +1,3 @@
 <?php
 
-use Lswagger\Classes\PathClasses;
+use Lonban\Lswagger\Classes\PathClasses;

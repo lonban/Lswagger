@@ -3,7 +3,7 @@
 namespace Lswagger;
 
 use Illuminate\Support\ServiceProvider;
-use Lswagger\Facades\LswaggerFacade;
+use Lonban\Lswagger\Facades\LswaggerFacade;
 
 class LswaggerServiceProvider extends ServiceProvider
 {
@@ -18,7 +18,7 @@ class LswaggerServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes.php');
         $this->mergeConfigFrom(__DIR__.'/config/lswagger.php', 'lswagger');
         $this->publishes([
-            __DIR__.'/resources/views' => base_path('resources/views/vendor/lswagger'),
+            __DIR__.'/resources/views' => base_path('resources/views/lswagger'),
             __DIR__.'/config/lswagger.php' => config_path('lswagger.php'),
         ]);
     }

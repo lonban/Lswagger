@@ -1,6 +1,6 @@
 <?php
 
-namespace Lswagger\Classes;
+namespace Lonban\Lswagger\Classes;
 
 use function OpenApi\scan;
 

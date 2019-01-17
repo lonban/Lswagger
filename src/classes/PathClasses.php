@@ -1,8 +1,8 @@
 <?php
 
-namespace Lswagger\Classes;
+namespace Lonban\Lswagger\Classes;
 
-use Lswagger\Exceptions\LswaggerException;
+use Lonban\Lswagger\Exceptions\LswaggerException;
 
 class PathClasses extends CommonClasses
 {

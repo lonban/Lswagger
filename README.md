@@ -3,12 +3,13 @@
 
 #配置
 --
-目录地址:lonban/lswagger/config/lswagger.php
+配置文件地址:根目录/config/lswagger.php
+视图文件地址:根目录/resources/views/lswagger
 
 #生成api文档并展示
 --
-http://localhost/lswagger/api
+http://域名/lswagger/api
 
 #仅展示api文档
 --
-http://localhost/lswagger/docs
+http://域名/lswagger/docs

@@ -1,10 +1,8 @@
 <?php
 
-namespace Lswagger\Controllers;
+namespace Lonban\Lswagger\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
-use Lswagger\Classes\LswaggerClasses;
 
 class ConfigController extends CommonController
 {

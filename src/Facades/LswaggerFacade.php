@@ -1,6 +1,6 @@
 <?php
 
-namespace Lswagger\Facades;
+namespace Lonban\Lswagger\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

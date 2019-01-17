@@ -33,7 +33,7 @@
  *   )
  * )
  */
-Route::group(['prefix'=>'lswagger','namespace'=>'Lswagger\Controllers'],function(){
+Route::group(['prefix'=>'lswagger','namespace'=>'Lonban\Lswagger\Controllers'],function(){
     Route::resource('/config','ConfigController');
     Route::get('/test', 'LswaggerContrller@test');
     Route::get('/api', 'LswaggerContrller@api');

@@ -1,10 +1,9 @@
 <?php
 
-namespace Lswagger\Classes;
+namespace Lonban\Lswagger\Classes;
 
-use Illuminate\Http\File;
 use Illuminate\Support\Facades\Storage;
-use Lswagger\Exceptions\LswaggerException;
+use Lonban\Lswagger\Exceptions\LswaggerException;
 
 class FileClasses extends CommonClasses
 {
