@@ -5,7 +5,7 @@ namespace Lonban\Lswagger\Classes;
 use Illuminate\Support\Facades\Storage;
 use Lonban\Lswagger\Exceptions\LswaggerException;
 
-class FileClasses extends CommonClasses
+class FileClass extends CommonClass
 {
     static $drive = 'local';
     static $path = '';

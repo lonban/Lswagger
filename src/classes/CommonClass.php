@@ -2,7 +2,7 @@
 
 namespace Lonban\Lswagger\Classes;
 
-class CommonClasses
+class CommonClass
 {
     public function __construct()
     {

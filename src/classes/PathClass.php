@@ -4,7 +4,7 @@ namespace Lonban\Lswagger\Classes;
 
 use Lonban\Lswagger\Exceptions\LswaggerException;
 
-class PathClasses extends CommonClasses
+class PathClass extends CommonClass
 {
     public static function swaggerApiPath($file = null)
     {

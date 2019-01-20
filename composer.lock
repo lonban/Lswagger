@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bde6fd447699b95298b4d661d25f2b6c",
+    "content-hash": "2130aaa03283a0514d8d0cdc64a6e87c",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -517,17 +517,17 @@
             "time": "2018-11-23T23:41:29+00:00"
         },
         {
-            "name": "lonban/vcjs",
+            "name": "lonban/vcc",
             "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lonban/vcjs.git",
-                "reference": "99c08b5d83eefd44458689df896c35c5ca75fffd"
+                "url": "https://github.com/lonban/vcc.git",
+                "reference": "f521eeaab508cdff5540f96810478a0c97a1338d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lonban/vcjs/zipball/99c08b5d83eefd44458689df896c35c5ca75fffd",
-                "reference": "99c08b5d83eefd44458689df896c35c5ca75fffd",
+                "url": "https://api.github.com/repos/lonban/vcc/zipball/f521eeaab508cdff5540f96810478a0c97a1338d",
+                "reference": "f521eeaab508cdff5540f96810478a0c97a1338d",
                 "shasum": ""
             },
             "require": {
@@ -538,24 +538,24 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Lonban\\Vcjs\\VcjsServiceProvider"
+                        "Lonban\\Vcc\\VccServiceProvider"
                     ],
                     "aliases": {
-                        "Lottery": "Lonban\\Vcjs\\Facades\\VcjsFacade"
+                        "Lottery": "Lonban\\Vcc\\Facades\\VccFacade"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Lonban\\Vcjs\\": "src/"
+                    "Lonban\\Vcc\\": "src/"
                 },
                 "files": [
-                    "src/method.php"
+                    "src/common.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "Apache-2.0"
             ],
             "authors": [
                 {
@@ -563,8 +563,7 @@
                     "email": "454595025@qq.com"
                 }
             ],
-            "description": "Vcjs前端功能js功能集",
-            "time": "2019-01-17T09:50:24+00:00"
+            "time": "2019-01-20T14:00:05+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1611,7 +1610,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",

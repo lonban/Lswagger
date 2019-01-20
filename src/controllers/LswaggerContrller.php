@@ -2,7 +2,7 @@
 
 namespace Lonban\Lswagger\Controllers;
 
-use Lonban\Lswagger\Classes\LswaggerClasses;
+use Lonban\Lswagger\Classes\LswaggerClass;
 
 class LswaggerContrller extends CommonController
 {
@@ -14,7 +14,7 @@ class LswaggerContrller extends CommonController
     //入口(包含生成文档功能)
     public function api()
     {
-        LswaggerClasses::scan();
+        LswaggerClass::scan();
         return view('lswagger::docs');
     }
 

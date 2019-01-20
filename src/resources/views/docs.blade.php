@@ -1,7 +1,7 @@
 <?php
 
-use Lonban\Lswagger\Classes\PathClasses;
-use Lonban\Lswagger\Classes\FileClasses;
+use Lonban\Lswagger\Classes\PathClass;
+use Lonban\Lswagger\Classes\FileClass;
 
 ?>
 <!-- HTML for static distribution bundle build -->
@@ -10,9 +10,9 @@ use Lonban\Lswagger\Classes\FileClasses;
   <head>
     <meta charset="UTF-8">
     <title>Swagger UI</title>
-    <link rel="stylesheet" type="text/css" href="{{PathClasses::swaggerApiAsset('swagger-ui.css')}}" >
-    <link rel="icon" type="image/png" href="{{PathClasses::swaggerApiAsset('favicon-32x32.png')}}" sizes="32x32" />
-    <link rel="icon" type="image/png" href="{{PathClasses::swaggerApiAsset('favicon-16x16.png')}}" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="{{PathClass::swaggerApiAsset('swagger-ui.css')}}" >
+    <link rel="icon" type="image/png" href="{{PathClass::swaggerApiAsset('favicon-32x32.png')}}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{PathClass::swaggerApiAsset('favicon-16x16.png')}}" sizes="16x16" />
     <style>
       html
       {
@@ -39,13 +39,13 @@ use Lonban\Lswagger\Classes\FileClasses;
   <body>
     <div id="swagger-ui"></div>
 
-    <script src="{{PathClasses::swaggerApiAsset('swagger-ui-bundle.js')}}"> </script>
-    <script src="{{PathClasses::swaggerApiAsset('swagger-ui-standalone-preset.js')}}"> </script>
+    <script src="{{PathClass::swaggerApiAsset('swagger-ui-bundle.js')}}"> </script>
+    <script src="{{PathClass::swaggerApiAsset('swagger-ui-standalone-preset.js')}}"> </script>
     <script>
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "{{FileClasses::getFileUrl(config('lswagger.name').'.'.config('lswagger.file_type'))}}",
+        url: "{{FileClass::getFileUrl(config('lswagger.name').'.'.config('lswagger.file_type'))}}",
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
