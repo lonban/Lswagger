@@ -1,6 +1,6 @@
 <?php
 
-namespace Lswagger;
+namespace Lonban\Lswagger;
 
 use Illuminate\Support\ServiceProvider;
 use Lonban\Lswagger\Facades\LswaggerFacade;

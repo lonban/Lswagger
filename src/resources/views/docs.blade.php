@@ -1,9 +1,3 @@
-<?php
-
-use Lonban\Lswagger\Classes\PathClass;
-use Lonban\Lswagger\Classes\FileClass;
-
-?>
 <!-- HTML for static distribution bundle build -->
 <!DOCTYPE html>
 <html lang="en">
