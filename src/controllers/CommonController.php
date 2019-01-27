@@ -15,15 +15,12 @@ class CommonController extends Controller
 {
     public function __construct()
     {
+        //
     }
 
     public static function newSelf()
     {
-        if(static::$SELF instanceof self) {
-            return static::$SELF;
-        } else {
-            return static::$SELF = new static();
-        }
+        //
     }
 
     public function __get($variable)

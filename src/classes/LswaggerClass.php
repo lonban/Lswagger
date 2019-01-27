@@ -11,6 +11,6 @@ class LswaggerClass extends CommonClass
         $openapi = scan(base_path(config('lswagger.to_path')));
         header('Content-Type: application/x-'.config('lswagger.file_type'));
         $content = config('lswagger.file_type')=='json'?$openapi->toJson():$openapi->toYaml();
-        FileClass::putFile($content,config('lswagger.name').'.'.config('lswagger.file_type'));
+        \VccFile::putFile($content,config('lswagger.name').'.'.config('lswagger.file_type'));
     }
 }

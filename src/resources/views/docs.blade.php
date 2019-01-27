@@ -4,9 +4,9 @@
   <head>
     <meta charset="UTF-8">
     <title>Swagger UI</title>
-    <link rel="stylesheet" type="text/css" href="{{PathClass::swaggerApiAsset('swagger-ui.css')}}" >
-    <link rel="icon" type="image/png" href="{{PathClass::swaggerApiAsset('favicon-32x32.png')}}" sizes="32x32" />
-    <link rel="icon" type="image/png" href="{{PathClass::swaggerApiAsset('favicon-16x16.png')}}" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="{{SwaggerApi::setPath()->getSrc('swagger-ui.css')}}" >
+    <link rel="icon" type="image/png" href="{{SwaggerApi::setPath()->getSrc('favicon-32x32.png')}}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{SwaggerApi::setPath()->getSrc('favicon-16x16.png')}}" sizes="16x16" />
     <style>
       html
       {
@@ -31,15 +31,14 @@
   </head>
 
   <body>
-    <div id="swagger-ui"></div>
-
-    <script src="{{PathClass::swaggerApiAsset('swagger-ui-bundle.js')}}"> </script>
-    <script src="{{PathClass::swaggerApiAsset('swagger-ui-standalone-preset.js')}}"> </script>
+  <div id="swagger-ui"></div>
+    <script src="{{SwaggerApi::setPath()->getSrc('swagger-ui-bundle.js')}}"> </script>
+    <script src="{{SwaggerApi::setPath()->getSrc('swagger-ui-standalone-preset.js')}}"> </script>
     <script>
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "{{FileClass::getFileUrl(config('lswagger.name').'.'.config('lswagger.file_type'))}}",
+        url: "{{VccFile::getFileUrl(config('lswagger.name').'.'.config('lswagger.file_type'))}}",
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
