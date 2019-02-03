@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>api文档生成</title>
-    <link rel="stylesheet" href="{{Vcc::getAssets('css/init.min.css')}}">
+    <link rel="stylesheet" href="{{VccPath::getAssets('css/init.min.css')}}">
 </head>
 <body>
 @yield('content')
