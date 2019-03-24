@@ -14,7 +14,7 @@
         "php": "^7.0.0",
         "zircote/swagger-php": "~2.0|3.*",
         "swagger-api/swagger-ui": "^3.0",
-        "lonban/vcc": "~1.1.0"
+        "lonban/vcc": "~0.1.0"
     },
     "autoload": {
         "psr-4": {
